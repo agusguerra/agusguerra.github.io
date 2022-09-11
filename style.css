@@ -276,3 +276,13 @@ html, body{
     }
 
 }
+
+
+@media screen and (max-width:424px){
+    #notebook-div{
+        align-content: center;
+        vertical-align: middle;
+        justify-content: center;  
+        padding: 60px 30px;
+    }
+}
