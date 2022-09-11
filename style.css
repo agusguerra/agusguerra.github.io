@@ -1,0 +1,278 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #313131;
+    scroll-behavior: smooth;
+
+}
+
+.main-banner{
+    position: relative;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+}
+
+.main-banner::before{
+    content: "";
+    background-image: url(/images/cybersecurity1.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.80;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.container h1{
+    margin: 0;
+    font-size: 100;
+}
+
+.container h1 span{
+    /* border: 6px solid white; */
+    padding: 6px 14px;
+    display: inline-block;
+}
+
+.cen{
+    margin: 20px;
+    display: block;
+    font-size: 22px;
+
+}
+
+.button {
+    color: #313131;
+    padding: 10px 24px;
+    background: #f1f1f1;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: .6s;
+}
+
+.button:hover{
+    opacity: .6;
+}
+
+/* Información después del banner */
+
+#my-personal-portfolio{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0e0e0e;
+    padding: 24px 18px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+
+#my-personal-header{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #f9f9f9;
+    padding: 110px 30px 40px 30px;
+    font-weight: bold;
+}
+#my-personal-text{
+    font-family: 'Roboto ', sans-serif;
+    color: #f9f9f9;
+    font-size:17.33px;
+    padding: 0px 18px 110px 18px;
+    line-height: 1.6em;
+}
+#enjoy{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background: #f3f3f3;
+    padding: 84px 16px;
+}
+#enjoy-title{
+    font-family: 'Roboto', sans-serif;
+    color: #1c1c1c;
+    font-size: 32px;
+    font-weight: bold;
+}
+#notebook-div{
+    align-content: center;
+    vertical-align: middle;
+    justify-content: center;  
+    padding: 60px 60px;
+}
+#notebook-img{
+    max-height: 80%;
+    max-width: 80%;
+    aspect-ratio: 4553/2612;
+    min-width: 250px;
+}
+#celular-div{
+    align-content: center;
+    vertical-align: middle;
+    justify-content: center;  
+    padding: 80px 80px;
+}
+#celular-img{
+    max-height: 60%;
+    max-width: 60%;
+    aspect-ratio: 425/784;
+    min-width: 150px;
+}
+
+
+#navigation{
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #f3f3f3;
+    padding: 24px 18px;
+}
+#navigation-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    color: #1c1c1c;
+    padding: 110px 30px 40px 30px;
+    font-weight: bold;
+}
+#navigation-text{
+    font-family: 'Roboto ', sans-serif;
+    color: #1c1c1c;
+    font-size: 17.33px;
+    padding: 0px 18px 110px 18px;
+    line-height: 1.6em;
+}
+
+
+
+/* Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+
+.site-footer{
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #0e0e0e;
+    padding: 64px 0px;
+}
+
+.site-footer .contenedor1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 0px 0px 50px;
+}
+
+.site-footer .contenedor1 .box-footer h2{
+    color: #f9f9f9;
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.site-footer .contenedor1 .box-footer p{
+    color: #8996A0;
+    margin-bottom: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+
+.site-footer .contenedor2{
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+
+.site-footer .contenedor2 .copyright{
+    color: #8996A0;
+    margin-top: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.site-footer .contenedor2 .logo-footer .img-footer{
+    aspect-ratio: 1700/956;
+    max-width: 15%;
+    min-width: 250px;
+}
+
+.site-footer .contenedor2 .rrss-footer {
+    color: #8996A0;
+    margin-top: 120px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+@media screen and (max-width:800px){
+    .site-footer .contenedor1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;
+    }
+
+    .site-footer .contenedor2{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        flex-wrap: wrap;
+        grid-gap: 30px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .site-footer .contenedor2 .logo-footer .img-footer{
+        aspect-ratio: 1700/956;
+        max-width: 15%;
+        min-width: 250px;
+        align-items: flex-start;
+    }
+
+    .site-footer .contenedor2 .logo-footer{
+        order: 0; /* order sirve para cambiar el orden de los div */
+    }
+    .site-footer .contenedor2 .copyright{
+        order: 2;
+        margin-top: 0px;
+    }
+    .site-footer .contenedor2 .rrss-footer {
+        order: 1;
+        margin-top: 50px;
+    }
+
+}
