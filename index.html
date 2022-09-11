@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agustín Guerra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="inner-width">
+
+            <div class="logo">
+                <img id="logo-nav" src="images/logo-navbar.png" alt="">
+                <!-- <h1>Agustín Guerra</h1> -->
+            </div>
+
+            <div class="right-navbar">
+                <div class="rrss">
+                    <a id="linkedin" href="https://www.linkedin.com/in/agus-guerra/">LinkedIn</a>
+                </div>
+                
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="navigation-menu">
+        <nav>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Contact</a></li>
+        </nav>
+    </div>
+
+
+    <div class="main-banner" id="fondo">
+    </div>
+           
+    <div class="container" id="botones">
+        <h1><span><b>Agustín Guerra</b></span></h1>
+        <span class="cen">Information Systems Engineering Student</span>
+        <a class="button" href="https://www.linkedin.com/in/agus-guerra/">Contacto</a>
+    </div>
+
+    <div id="my-personal-portfolio">
+        <div id="my-personal-header">
+            My Personal Portfolio
+        </div>
+        <div id="my-personal-text">
+            <em>I decided to make my Web Portfolio so that you can learn a little about who I am, and what I like to do, in the most didactic way possible.</em><br><br><br>
+            <em>My future personal projects will be included here.</em>
+        </div>
+    </div>
+
+    <div id="enjoy">
+        <div id="enjoy-title">
+            Enjoy the experience!
+        </div>
+        <div id="notebook-div">
+            <img id="notebook-img" src="/images/notebook.png" alt="">
+        </div>
+        <div id="celular-div">
+            <img id="celular-img" src="/images/celular.png" alt="">
+        </div> 
+    </div>
+    
+    <div id="navigation">
+        <div id="navigation-title">
+            Navigation
+        </div>
+        <div id="navigation-text">
+            <em>Use the navigation menu to scroll through the web page.</em>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="contenedor1">
+            <div class="box-footer">
+                <h2>Security & Privacy</h2>
+                <p>Report Copyright Infringement</p>
+                <p>Privacy Statement</p>
+            </div>
+            <div class="box-footer">
+                <h2>Website</h2>
+                <p>Accessibility</p>
+                <p>Digital Accessibility</p>
+                
+            </div>
+            <div class="box-footer">
+                <h2>Get In Touch</h2>
+                <p>Contact Me</p>
+                <p>Jobs</p>
+            </div>
+        </div>
+
+
+        <div class="contenedor2">
+
+            <div class="copyright">
+                &copy; 2022 Agustín Guerra - All rights reserved.
+            </div>
+            
+            <div class="logo-footer">
+                <img src="images/logo-agustin.png" class="img-footer" alt="footer">
+            </div>
+
+            <div class="rrss-footer">
+                LinkedIn: /agus-guerra/
+            </div>
+
+        </div>    
+
+    </footer>
+
+    <script>
+        $(".menu-icon").click(function () {
+            $(this).toggleClass("active");
+            $(".navigation-menu").toggleClass("active");
+            $(".menu-icon i").toggleClass("fa-times");
+        });
+
+
+        /* navbar */
+        $(document).ready(function(){
+            $(window).bind('scroll', function(){
+                var gap=50;
+                if($(window).scrollTop() > gap){
+                    $('.inner-width').addClass('active-nav');
+                } else{
+                    $('.inner-width').removeClass('active-nav');
+                }
+            });
+        });
+
+        /* Efecto background */
+        let fondo = document.getElementById('fondo');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            fondo.style.top = value * 0.5 + 'px';
+        });
+
+    </script>
+
+
+</body>
+</html>
