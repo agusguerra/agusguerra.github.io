@@ -25,7 +25,7 @@ html, body{
 
 .main-banner::before{
     content: "";
-    background-image: url(/images/cybersecurity1.jpg);
+    background-image: url(images/cybersecurity1.jpg);
     background-size: cover;
     background-position: center center;
     position: absolute;
